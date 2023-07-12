@@ -1,13 +1,8 @@
-//
-//  CoreKit.h
-//  RustyApp
-//
-//  Created by Rza Ismayilov on 13.07.23.
-//
+#include <stdarg.h>
+#include <stdbool.h>
+#include <stdint.h>
+#include <stdlib.h>
 
-#ifndef CoreKit_h
-#define CoreKit_h
+void hello_world(void);
 
-void hello_world();
-
-#endif /* CoreKit_h */
+long long sum_two(int first, int second);

@@ -1,5 +1,7 @@
 cd CoreKit;
 
+cbindgen --lang C --output ../RustyApp/CoreKit/CoreKit.h;
+
 if [ $TARGET_DEVICE_PLATFORM_NAME = "iphonesimulator" ]; then
     if [ $(uname -m) = "arm64" ]; then
         cargo build --target aarch64-apple-ios-sim;
